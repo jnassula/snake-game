@@ -74,7 +74,7 @@ while not game_over:
         break
 
     for i in range(len(snake) -1, 0, -1):
-        snake[i] = (snake[i-1][0], snake[1-1][1])
+        snake[i] = (snake[i-1][0], snake[i-1][1])
 
     if my_direction == UP:
         snake[0] = (snake[0][0], snake[0][1] - 10)
